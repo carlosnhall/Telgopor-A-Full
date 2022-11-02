@@ -266,5 +266,22 @@ transition: all 0.7s;
   height: 380px;
   
   }
+
+
+.cajamedidas {
+  
+ align-items: center;
+}
+
+
+  .titulomedidas {
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+    color: black;
+
+  }
+
+
   
 

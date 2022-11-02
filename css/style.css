@@ -16,6 +16,7 @@ header img{
   height: 100px;
 }
 
+
 .navbar-brand{
   color: orange;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -151,15 +152,15 @@ img {
   img{
       object-fit: cover;
       width:100%;
-      height:100%;
-    }
+      height:100%; }
 }
 
 .carousel-inner {
   margin: auto;
   width: 65%;
-  max-height: 650px;
+  max-height: 550px;
   border: 5px solid black;
+  
 }
 
 .first-title {
@@ -171,6 +172,18 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+
+
+.img-fluid {
+border-radius: 20px;
+transition: all 0.7s;
+}
+
+.img-fluid:hover {
+  transform: translateY(-12px);
+}
+
+
 
 
 
@@ -235,3 +248,23 @@ img {
   border-top: 1px solid #e2e2e2;
   color: gold;
 }
+
+.map{
+  margin: auto;
+  border-radius: 20px;
+  width: 600px;
+  height: 380px;
+  align-self: center;
+  }
+  
+
+
+.gmap_iframe{
+  margin: auto;
+  border-radius: 20px;
+  width: 600px;
+  height: 380px;
+  
+  }
+  
+

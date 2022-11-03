@@ -24,6 +24,7 @@ header img{
   margin-left:10px;
 }
 
+/* MAIN */
 
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -40,22 +41,16 @@ main{
   width: 600px;
   height: 380px;
   align-self: center;
-  }
+}
 
-  .titulo-header{
-    width: 98%;
-    
-    text-align:center;
-    vertical-align: middle;
-   
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-  }
-
-  
-
-
+.titulo-header{
+  width: 98%;
+  text-align:center;
+  vertical-align: middle;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
 
 /* CSS CONTACT MAIN*/
 
@@ -124,9 +119,6 @@ main{
   font-size: 16px;
 }
 
-
-
-
 /* css carrousel */
 
 .menu-container {
@@ -138,21 +130,9 @@ main{
   height: 100px;
 }
 
-
 .navbar-toggler-icon {
   background-color: gold;
   border: 3px solid gray;
-}
-
-/* Index */
-
-/* Carousel */
-
-img {
-  img{
-      object-fit: cover;
-      width:100%;
-      height:100%; }
 }
 
 .carousel-inner {
@@ -173,7 +153,6 @@ img {
   justify-content: space-between;
 }
 
-
 .img-fluid {
 border-radius: 20px;
 transition: all 0.7s;
@@ -183,21 +162,7 @@ transition: all 0.7s;
   transform: translateY(-12px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* CSS FOOTER */
+/* CSS FOOTER */
 
 .footer {
   width: 100%;
@@ -249,38 +214,42 @@ transition: all 0.7s;
   color: gold;
 }
 
+/* US MAP */
+
 .map{
   margin: auto;
   border-radius: 20px;
   width: 600px;
   height: 380px;
   align-self: center;
-  }
+}
   
-
-
 .gmap_iframe{
   margin: auto;
   border-radius: 20px;
   width: 600px;
   height: 380px;
-  
-  }
+}
 
+/* TABLAS */
 
 .cajamedidas {
-  
- align-items: center;
+  align-items: center;
+}
+
+.titulomedidas {
+  text-align: center;
+  padding-top: 30px;
+  margin: auto;
+  color: black;
+}
+
+.titulopagina{
+  color: yellow;
+  font-size: 50px;
 }
 
 
-  .titulomedidas {
-    text-align: center;
-    padding-top: 30px;
-    margin: auto;
-    color: black;
-
-  }
 
 
   

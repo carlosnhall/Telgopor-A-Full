@@ -1,77 +1,42 @@
-/* CSS INDEX HEADER */
-
-*{
+@charset "UTF-8";
+/* UNIVERSAL*/
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
-header{
-  align-items: center;
-  background-color: #a30b1b ;
-  margin-bottom: 25px;
+body {
+  background-image: url("../multimedia/pexels-dan-cristian-pădureț-5514633.jpg");
 }
 
-header img{
-  height: 130px;
-  margin-left: 30px;
-}
-
-
-.nav-link {
-  color: orange;
-  font-family: 'Vast Shadow', cursive;
-  font-size: 25px;  
-}
-
-.dropdown-menu{
-  background-color: #a30b1b;
-  border-color: orange;
-  
-}
-
-.dropdown-item {
-  color: orange;
-  font-family: 'Vast Shadow', cursive;
-  font-size: 20px; 
-}
-
-
-/* MAIN */
-
-body{
-  
-  background-image: url('../multimedia/pexels-dan-cristian-pădureț-5514633.jpg');
-}
-
-main{
+main {
   height: 100%;
 }
 
-.titulo-encabezado{
+.titulo-encabezado, .descripcion-encabezado {
   padding-top: 10px;
-font-size: 30px;
-font-weight: bold;
-  
+  font-size: 30px;
+  font-weight: bold;
 }
 
+.descripcion-encabezado {
+  font-size: 20px;
+  font-weight: 500;
+}
 
-
-.encabezado-contenedor-img { 
+.encabezado-contenedor-img {
   margin: auto;
   border-radius: 20px;
   width: 600px;
   height: 380px;
   align-self: center;
-  
 }
 
-.titulo-header{
+.titulo-header {
   width: 95%;
-  text-align:justify;
+  text-align: justify;
   vertical-align: middle;
   color: black;
   font-weight: bold;
@@ -81,148 +46,91 @@ font-weight: bold;
 
 .titulo-header-tortas {
   width: 95%;
-  text-align:justify;
+  text-align: justify;
   vertical-align: middle;
   color: black;
   font-weight: bold;
   font-size: 30px;
   padding-left: 5rem;
-
 }
 
 .titulo-header-placas {
   width: 95%;
-  text-align:justify;
+  text-align: justify;
   vertical-align: middle;
   color: black;
   font-weight: bold;
   font-size: 30px;
   padding-left: 5rem;
   padding-top: 10px;
-
 }
 
-
-/* CSS CONTACT MAIN*/
-
-.bodyContact {
-  background-image: url('../multimedia/pexels-dan-cristian-pădureț-5514633.jpg');
+.parrafoUs {
+  width: 98%;
+  text-align: justify;
+  vertical-align: middle;
+  padding-left: 5%;
+  padding-right: 4%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
 }
 
-.form-register {
-  width: 500px;
-  background: #736a39;
-  padding: 30px;
-  margin: auto;
-  margin-top: 80px;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white;
-  box-shadow: 7px 13px 37px #000;
-}
-
-.form-register h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.controls {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #1f53c5;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white;
-}
-
-.coments {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #1f53c5;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white;
-}
-
-.form-register a {
-  color: white;
-  text-decoration: none;
-}
-
-.form-register a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.form-register .botons {
-  width: 100%;
-  background: #1f53c5;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-}
-
-/* css carrousel */
-
-.menu-container {
-  background-color: black;
-  width: 100%;
-}
-
-.logo-img {
-  height: 100px;
-}
-
-.navbar-toggler-icon {
-  background-color: gold;
-  border: 3px solid gray;
-}
-
-.carousel-inner {
-  margin: auto;
-  width: 65%;
-  max-height: 550px;
-  border: 5px solid black;
-  
-}
-
-.first-title {
-  color: white;
-  -webkit-text-stroke: 1px black;
-  display: flex;
-  margin: 1%;
-  flex-direction: column;
+/* TABLAS */
+.cajamedidas {
   align-items: center;
-  justify-content: space-between;
 }
 
-.img-fluid {
-  width: 350px;
-  border-radius: 20px;
-  transition: all 0.7s;
+.titulomedidas {
+  text-align: center;
+  padding-top: 30px;
+  margin: auto;
+  color: black;
+  font-weight: bold;
 }
 
-.img-fluid:hover {
-  transform: translateY(-12px);
+.titulopagina {
+  color: #a30b1b;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-variant: unset;
+  text-align: center;
+}
+
+/* CSS HEADER */
+header {
+  align-items: center;
+  background-color: #a30b1b;
+  margin-bottom: 25px;
+}
+header img {
+  height: 130px;
+  margin-left: 30px;
+}
+
+.nav-link {
+  color: orange;
+  font-family: "Vast Shadow", cursive;
+  font-size: 25px;
+}
+
+.dropdown-menu {
+  background-color: #a30b1b;
+  border-color: #ffa500;
+}
+
+.dropdown-item {
+  color: #ffa500;
+  font-family: "Vast Shadow", cursive;
+  font-size: 20px;
 }
 
 /* CSS FOOTER */
-
 .footer {
   width: 100%;
   position: relative;
   height: auto;
-  background-color:#a30b1b ;
+  background-color: #a30b1b;
 }
-
 .footer .col {
   width: 190px;
   height: auto;
@@ -237,16 +145,16 @@ font-weight: bold;
   margin: 5%;
   padding: 0;
   text-align: center;
-  font-family: inherit;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: orange;
+  color: #ffa500;
   font-weight: normal;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.250em;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 0.25em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .footer .col ul {
@@ -265,72 +173,108 @@ font-weight: bold;
 
 .foot {
   border-top: 1px solid #e2e2e2;
-  color: gold;
+  color: #ffa500;
 }
 
-/* US MAP */
+/* CARROUSEL */
+.menu-container {
+  background-color: black;
+  width: 100%;
+}
 
-.map{
+.logo-img {
+  height: 100px;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffa500;
+  border: 3px solid gray;
+}
+
+.carousel-inner {
   margin: auto;
-  border-radius: 20px;
-  width: 600px;
-  height: 380px;
-  align-self: center;
-}
-  
-.gmap_iframe{
-  margin: auto;
-  border-radius: 20px;
-  width: 500px;
-  height: 35  0px;
+  width: 65%;
+  max-height: 550px;
+  border: 5px solid black;
 }
 
-.titulo-header2{
-  width: 98%;
-  text-align:justify;
-  vertical-align: middle;
-  padding-left: 5%;
-  padding-right: 4%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
-}
-
-/* TABLAS */
-
-.cajamedidas {
+.first-title {
+  color: white;
+  -webkit-text-stroke: 1px black;
+  display: flex;
+  margin: 1%;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-.titulomedidas {
-  text-align: center;
-  padding-top: 30px;
+.img-fluid {
+  width: 350px;
+  border-radius: 20px;
+  transition: all 0.7s;
+}
+.img-fluid:hover {
+  transform: translateY(-12px);
+}
+
+/* CONTACT */
+.form-register {
+  width: 500px;
+  background: #736a39;
+  padding: 30px;
   margin: auto;
-  color: black;
-  font-weight: bold;
-  
+  margin-top: 80px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
-.titulopagina{
-  color: #a30b1b;
-  font-size: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-variant: unset;
+.controls,
+.coments {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
 }
 
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
 
-
-
+/* MEADUQUERYS */
 @media (max-width: 349px) {
- 
-  .titulo-header{
+  .titulo-header {
     width: 98%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     padding-left: 10%;
     padding-top: 5%;
   }
- 
-  .encabezado-contenedor-img { 
+  .encabezado-contenedor-img {
     margin: auto;
     border-radius: 15px;
     width: 350px;
@@ -338,67 +282,53 @@ font-weight: bold;
     align-self: center;
     padding-left: 30px;
   }
-
   .nav-link {
     color: orange;
-    font-family: 'Vast Shadow', cursive;
-    font-size: 12px;  
+    font-family: "Vast Shadow", cursive;
+    font-size: 12px;
   }
-
   .dropdown-menu {
     background-color: #a30b1b;
-    border-color: orange;
-  
+    border-color: #ffa500;
   }
-
-  .dropdown-item{
-    font-family: 'Vast Shadow', cursive;
-    color: orange;
-    font-size: 12px; 
+  .dropdown-item {
+    font-family: "Vast Shadow", cursive;
+    color: #ffa500;
+    font-size: 12px;
   }
-
   .img-fluid {
     width: 350px;
     border-radius: 20px;
     padding-left: 30px;
   }
-
-  .titulo-encabezado{
+  .titulo-encabezado, .descripcion-encabezado {
     padding-left: 3rem;
-    
     padding-top: 1rem;
-    
   }
-
   .descripcion-encabezado {
-
     display: none;
   }
-
-  .titulo-header2{
+  .titulo-header2 {
     width: 98%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     padding-left: 5%;
     padding-top: 8%;
   }
-
-
-
-
-}
-
-
-@media (max-width: 576px) and (min-width: 350px)  {
-  .navbar-brand{
-    color: orange;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
-    margin-left:7px;
+  .foot {
+    text-align: center;
   }
-  .titulo-header{
+}
+@media (max-width: 576px) and (min-width: 350px) {
+  .navbar-brand {
+    color: #ffa500;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 18px;
+    margin-left: 7px;
+  }
+  .titulo-header {
     width: 98%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     color: black;
     font-weight: bold;
@@ -406,7 +336,7 @@ font-weight: bold;
     padding-left: 3rem;
     padding-top: 1rem;
   }
-  .encabezado-contenedor-img { 
+  .encabezado-contenedor-img {
     margin: auto;
     border-radius: 15px;
     width: 350px;
@@ -414,91 +344,58 @@ font-weight: bold;
     align-self: center;
     padding-left: 3rem;
   }
-
-  .nav-link {
-    font-size: 15px;  
-  }
-
-
-
+  .nav-link,
   .dropdown-item {
-
-    font-size: 15px; 
+    font-size: 15px;
   }
-
   .img-fluid {
     width: 450px;
     border-radius: 20px;
     padding-left: 4rem;
   }
-
-  .titulo-encabezado{
+  .titulo-encabezado, .descripcion-encabezado {
     padding-left: 5rem;
-    
     padding-top: 1rem;
-    
   }
-
   .descripcion-encabezado {
-
     display: none;
   }
-
-  
   .footer .col {
     width: 22rem;
     height: auto;
-    
-    
-
-    
   }
-  
-  .footer .col h2 {
-
-
+  .footer .col .titfooter {
     font-size: 18px;
-    
-
-
-   
   }
-  
   .footer .col ul {
-
     justify-content: center;
-
-    
   }
-  
- .footer .col ul li {
-
-  padding-left: 1rem;
-  padding-right: 1rem;
-  
- }
-  
- .titulo-header2{
-  width: 98%;
-  text-align:justify;
-  vertical-align: middle;
-  padding-left: 5%;
-  padding-top: 2%;
-  padding-right: 4%;
-}
-
-}
-
-@media (max-width: 768px) and (min-width: 576px)  {
-  .navbar-brand{
-    color: orange;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 25px;
-    margin-left:9px;
+  .footer .col ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  .titulo-header{
+  .foot {
+    text-align: center;
+  }
+  .titulo-header2 {
     width: 98%;
-    text-align:justify;
+    text-align: justify;
+    vertical-align: middle;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-right: 4%;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .navbar-brand {
+    color: orange;
+    font-family: "Vast Shadow", cursive;
+    font-size: 25px;
+    margin-left: 9px;
+  }
+  .titulo-header {
+    width: 98%;
+    text-align: justify;
     vertical-align: middle;
     color: black;
     font-weight: bold;
@@ -506,137 +403,106 @@ font-weight: bold;
     padding-left: 3rem;
     padding-top: 1rem;
   }
-  .encabezado-contenedor-img { 
+  .encabezado-contenedor-img {
     margin: auto;
     border-radius: 15px;
     width: 400px;
     height: 330px;
     align-self: center;
   }
-
-  .nav-link {
-    font-size: 18px;  
-  }
-
-
-
+  .nav-link,
   .dropdown-item {
-
-    font-size: 18px; 
+    font-size: 18px;
   }
-
   .img-fluid {
     width: 550px;
     border-radius: 20px;
     padding-left: 4rem;
   }
-
-  .titulo-encabezado{
+  .titulo-encabezado, .descripcion-encabezado {
     padding-left: 9rem;
-    
     padding-top: 1rem;
-    
   }
-
   .descripcion-encabezado {
-
     display: none;
   }
-
-  .titulo-header2{
+  .titulo-header2 {
     width: 98%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     padding-left: 5%;
     padding-top: 2%;
     padding-right: 4%;
   }
-
 }
-
-
-@media (max-width: 992px) and (min-width: 768px)  {
-  .navbar-brand{
-    color: orange;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+@media (max-width: 992px) and (min-width: 768px) {
+  .navbar-brand {
+    color: #ffa500;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 30px;
-    margin-left:9px;
+    margin-left: 9px;
   }
-  .titulo-header{
+  .titulo-header {
     width: 85%;
     margin-left: 7.5%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     color: black;
     font-weight: bold;
     font-size: 18px;
   }
-  .encabezado-contenedor-img { 
+  .encabezado-contenedor-img {
     margin: auto;
     border-radius: 15px;
     width: 500px;
     height: 375px;
     align-self: center;
   }
-
-  .nav-link {
-    font-size: 20px;  
-  }
-
-
-
+  .nav-link,
   .dropdown-item {
-
-    font-size: 20px; 
+    font-size: 20px;
   }
-
-  .titulo-header2{
+  .titulo-header2 {
     width: 98%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     padding-left: 5%;
     padding-top: 2%;
     padding-right: 4%;
   }
-
 }
-
 @media (max-width: 1400px) and (min-width: 992px) {
-  .navbar-brand{
+  .navbar-brand {
     color: orange;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 35px;
-    margin-left:12px;
+    margin-left: 12px;
   }
-  .titulo-header{
+  .titulo-header {
     margin-top: 20px;
     width: 85%;
     margin-left: 7.5%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     color: black;
     font-weight: bold;
     font-size: 25px;
   }
-  .encabezado-contenedor-img { 
+  .encabezado-contenedor-img {
     margin: auto;
     border-radius: 20px;
     width: 600px;
     height: 450px;
     align-self: center;
   }
-
-  .titulo-header2{
+  .titulo-header2 {
     width: 98%;
-    text-align:justify;
+    text-align: justify;
     vertical-align: middle;
     padding-left: 5%;
     padding-top: 2%;
     padding-right: 4%;
   }
-
 }
 
-
-  
-
+/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* UNIVERSAL*/
+/* VARIABLES */ /* UNIVERSAL*/
 * {
   margin: 0;
   padding: 0;
@@ -9,24 +9,19 @@
 
 body {
   background-image: url("../multimedia/pexels-dan-cristian-pădureț-5514633.jpg");
+  position: relative;
 }
 
-main {
-  height: 100%;
+/* MAIN*/
+.tituloPagina {
+  color: #a30b1b;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-variant: unset;
+  text-align: center;
 }
 
-.titulo-encabezado, .descripcion-encabezado {
-  padding-top: 10px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.descripcion-encabezado {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.encabezado-contenedor-img {
+.contenedorFrente {
   margin: auto;
   border-radius: 20px;
   width: 600px;
@@ -34,9 +29,9 @@ main {
   align-self: center;
 }
 
-.titulo-header {
+.parrafoFrente {
   width: 95%;
-  text-align: justify;
+  text-align: center;
   vertical-align: middle;
   color: black;
   font-weight: bold;
@@ -44,27 +39,34 @@ main {
   padding-left: 5rem;
 }
 
-.titulo-header-tortas {
-  width: 95%;
-  text-align: justify;
-  vertical-align: middle;
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-  padding-left: 5rem;
+.fotosSecciones {
+  margin-top: 3rem;
+}
+.fotosSecciones img {
+  width: 120%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
 }
 
-.titulo-header-placas {
-  width: 95%;
-  text-align: justify;
-  vertical-align: middle;
-  color: black;
+.textoSecciones h2,
+.textoSecciones h3,
+.textoSecciones h4 {
+  margin-top: 3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: secondary-color;
   font-weight: bold;
-  font-size: 30px;
-  padding-left: 5rem;
-  padding-top: 10px;
+  font-size: 35px;
+}
+.textoSecciones p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: secondary-color;
+  font-size: 25px;
+  text-align: justify;
 }
 
+/* US*/
 .parrafoUs {
   width: 98%;
   text-align: justify;
@@ -73,27 +75,20 @@ main {
   padding-right: 4%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
+  font-weight: 600;
 }
 
 /* TABLAS */
-.cajamedidas {
+.cajaMedidas {
   align-items: center;
 }
 
-.titulomedidas {
+.tituloMedidas {
   text-align: center;
   padding-top: 30px;
   margin: auto;
   color: black;
   font-weight: bold;
-}
-
-.titulopagina {
-  color: #a30b1b;
-  font-size: 50px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-variant: unset;
-  text-align: center;
 }
 
 /* CSS HEADER */
@@ -125,55 +120,84 @@ header img {
 }
 
 /* CSS FOOTER */
-.footer {
+footer {
+  margin-top: 2rem;
+  background-color: #ffa500;
   width: 100%;
-  position: relative;
-  height: auto;
-  background-color: #a30b1b;
-}
-.footer .col {
-  width: 190px;
-  height: auto;
-  float: right;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px 15px 15px 15px;
-}
-
-.titfooter {
-  margin: 5%;
-  padding: 0;
-  text-align: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 17px;
-  padding: 20px 0px 5px 0px;
-  color: #ffa500;
-  font-weight: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-.footer .col ul {
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: #a30b1b;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.logoFooter {
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+.contenedorSociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.contenedorFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  color: #a30b1b;
+  font-size: 18px;
 }
 
-.clearfix {
-  clear: both;
+.iconoSocial {
+  background-color: #a30b1b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #a30b1b;
+  background-image: url(../multimedia/whatsapp-blanco.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+.iconoSocial:hover {
+  background-color: #ffa500;
+}
+.iconoSocial:nth-of-type(2) {
+  background-image: url(../multimedia/FacebookBlanco.png);
+}
+.iconoSocial:nth-of-type(3) {
+  background-image: url(../multimedia/InstagramBlanco.png);
 }
 
-.foot {
-  border-top: 1px solid #e2e2e2;
-  color: #ffa500;
+.menuItem {
+  text-align: center;
+  font-family: "Vast Shadow", cursive;
+  color: #a30b1b;
+  text-decoration: none;
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.menuItem:hover {
+  opacity: 2;
+}
+
+.copyright {
+  color: #a30b1b;
+  text-align: center;
 }
 
 /* CARROUSEL */
@@ -218,24 +242,25 @@ header img {
 }
 
 /* CONTACT */
-.form-register {
+.formularioRegistro {
   width: 500px;
   background: #736a39;
   padding: 30px;
   margin: auto;
   margin-top: 80px;
+  margin-bottom: 30px;
   border-radius: 4px;
   font-family: "calibri";
   color: white;
   box-shadow: 7px 13px 37px #000;
 }
-.form-register h4 {
+.formularioRegistro h1 {
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-.controls,
-.coments {
+.controles,
+.comentarios {
   width: 100%;
   background: #24303c;
   padding: 10px;
@@ -247,15 +272,15 @@ header img {
   color: white;
 }
 
-.form-register a {
+.formularioRegistro a {
   color: white;
   text-decoration: none;
 }
-.form-register a:hover {
+.formularioRegistro a:hover {
   color: white;
   text-decoration: underline;
 }
-.form-register .botons {
+.formularioRegistro .botons {
   width: 100%;
   background: #1f53c5;
   border: none;
@@ -265,22 +290,22 @@ header img {
   font-size: 16px;
 }
 
-/* MEADUQUERYS */
+/* MEDIAQUERYS */
 @media (max-width: 349px) {
-  .titulo-header {
+  .parrafoFrente {
     width: 98%;
     text-align: justify;
     vertical-align: middle;
     padding-left: 10%;
     padding-top: 5%;
   }
-  .encabezado-contenedor-img {
+  .contenedorFrente {
     margin: auto;
     border-radius: 15px;
     width: 350px;
     height: 300px;
     align-self: center;
-    padding-left: 30px;
+    padding-left: 2.2rem;
   }
   .nav-link {
     color: orange;
@@ -296,114 +321,82 @@ header img {
     color: #ffa500;
     font-size: 12px;
   }
-  .img-fluid {
-    width: 350px;
-    border-radius: 20px;
-    padding-left: 30px;
+  .fotosSecciones {
+    padding-left: 1.2rem;
   }
-  .titulo-encabezado, .descripcion-encabezado {
-    padding-left: 3rem;
-    padding-top: 1rem;
+  .textoSecciones h2,
+  .textoSecciones h3,
+  .textoSecciones h4 {
+    font-size: 25px;
+    text-align: center;
   }
-  .descripcion-encabezado {
+  .textoSecciones p {
     display: none;
   }
-  .titulo-header2 {
-    width: 98%;
-    text-align: justify;
-    vertical-align: middle;
-    padding-left: 5%;
-    padding-top: 8%;
-  }
-  .foot {
+  .tituloPagina {
     text-align: center;
+    font-size: 28px;
+  }
+  .contenedorFooter {
+    padding-left: 0;
+  }
+  .parrafoUs {
+    font-size: 16px;
+    font-weight: 500;
   }
 }
 @media (max-width: 576px) and (min-width: 350px) {
-  .navbar-brand {
-    color: #ffa500;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-size: 18px;
-    margin-left: 7px;
-  }
-  .titulo-header {
+  .parrafoFrente {
     width: 98%;
     text-align: justify;
     vertical-align: middle;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    padding-left: 3rem;
-    padding-top: 1rem;
+    padding-left: 10%;
+    padding-top: 5%;
   }
-  .encabezado-contenedor-img {
+  .contenedorFrente {
     margin: auto;
     border-radius: 15px;
     width: 350px;
     height: 300px;
     align-self: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
   }
   .nav-link,
   .dropdown-item {
     font-size: 15px;
   }
   .img-fluid {
-    width: 450px;
+    width: auto;
     border-radius: 20px;
-    padding-left: 4rem;
+    padding-left: 3rem;
   }
-  .titulo-encabezado, .descripcion-encabezado {
-    padding-left: 5rem;
-    padding-top: 1rem;
+  .fotosSecciones {
+    padding-left: 1.8rem;
   }
-  .descripcion-encabezado {
-    display: none;
-  }
-  .footer .col {
-    width: 22rem;
-    height: auto;
-  }
-  .footer .col .titfooter {
-    font-size: 18px;
-  }
-  .footer .col ul {
-    justify-content: center;
-  }
-  .footer .col ul li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .foot {
+  .textoSecciones h2,
+  .textoSecciones h3,
+  .textoSecciones h4 {
+    font-size: 28px;
     text-align: center;
   }
-  .titulo-header2 {
-    width: 98%;
-    text-align: justify;
-    vertical-align: middle;
-    padding-left: 5%;
-    padding-top: 2%;
-    padding-right: 4%;
+  .textoSecciones p {
+    display: none;
+  }
+  .footer-menu-container {
+    padding-left: 0;
+  }
+  .welcome-img {
+    margin: auto;
+    margin-left: 1.5rem;
+  }
+  .welcome-text {
+    margin: auto;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 768px) and (min-width: 576px) {
-  .navbar-brand {
-    color: orange;
-    font-family: "Vast Shadow", cursive;
-    font-size: 25px;
-    margin-left: 9px;
-  }
-  .titulo-header {
-    width: 98%;
-    text-align: justify;
-    vertical-align: middle;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    padding-left: 3rem;
-    padding-top: 1rem;
-  }
-  .encabezado-contenedor-img {
+  .contenedorFrente {
     margin: auto;
     border-radius: 15px;
     width: 400px;
@@ -419,39 +412,21 @@ header img {
     border-radius: 20px;
     padding-left: 4rem;
   }
-  .titulo-encabezado, .descripcion-encabezado {
-    padding-left: 9rem;
-    padding-top: 1rem;
+  .textoSecciones h2,
+  .textoSecciones h3,
+  .textoSecciones h4 {
+    font-size: 32px;
+    text-align: center;
   }
-  .descripcion-encabezado {
+  .textoSecciones p {
     display: none;
   }
-  .titulo-header2 {
-    width: 98%;
-    text-align: justify;
-    vertical-align: middle;
-    padding-left: 5%;
-    padding-top: 2%;
-    padding-right: 4%;
+  .footer-menu-container {
+    padding-left: 0;
   }
 }
 @media (max-width: 992px) and (min-width: 768px) {
-  .navbar-brand {
-    color: #ffa500;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-size: 30px;
-    margin-left: 9px;
-  }
-  .titulo-header {
-    width: 85%;
-    margin-left: 7.5%;
-    text-align: justify;
-    vertical-align: middle;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .encabezado-contenedor-img {
+  .contenedorFrente {
     margin: auto;
     border-radius: 15px;
     width: 500px;
@@ -462,23 +437,18 @@ header img {
   .dropdown-item {
     font-size: 20px;
   }
-  .titulo-header2 {
-    width: 98%;
-    text-align: justify;
-    vertical-align: middle;
-    padding-left: 5%;
-    padding-top: 2%;
-    padding-right: 4%;
+  .textoSecciones h2,
+  .textoSecciones h3,
+  .textoSecciones h4 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .textoSecciones p {
+    font-size: 25px;
   }
 }
 @media (max-width: 1400px) and (min-width: 992px) {
-  .navbar-brand {
-    color: orange;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-size: 35px;
-    margin-left: 12px;
-  }
-  .titulo-header {
+  .parrafoFrente {
     margin-top: 20px;
     width: 85%;
     margin-left: 7.5%;
@@ -488,20 +458,12 @@ header img {
     font-weight: bold;
     font-size: 25px;
   }
-  .encabezado-contenedor-img {
+  .contenedorFrente {
     margin: auto;
     border-radius: 20px;
     width: 600px;
     height: 450px;
     align-self: center;
-  }
-  .titulo-header2 {
-    width: 98%;
-    text-align: justify;
-    vertical-align: middle;
-    padding-left: 5%;
-    padding-top: 2%;
-    padding-right: 4%;
   }
 }
 

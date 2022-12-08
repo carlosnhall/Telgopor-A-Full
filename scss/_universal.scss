@@ -9,70 +9,78 @@
 
 body {
     background-image: url('../multimedia/pexels-dan-cristian-pădureț-5514633.jpg');
+    position: relative;
 }
 
-main {
-    height: 100%;
+/* MAIN*/
+
+
+
+.tituloPagina {
+    color: $primary-color;
+    font-size: 50px;
+    font-family: $secondary-font-family;
+    font-variant: unset;
+    text-align: center;
 }
 
-.titulo-encabezado {
-    padding-top: 10px;
-    font-size: 30px;
-    font-weight: bold;
-
-}
-
-.descripcion-encabezado {
-
-    @extend .titulo-encabezado;
-    font-size: 20px;
-    font-weight: 500;
-
-}
-
-
-
-.encabezado-contenedor-img {
+.contenedorFrente {
     margin: auto;
     border-radius: 20px;
     width: 600px;
     height: 380px;
     align-self: center;
-
 }
 
-.titulo-header {
+.parrafoFrente {
     width: 95%;
-    text-align: justify;
+    text-align: center;
     vertical-align: middle;
     color: black;
     font-weight: bold;
     font-size: 25px;
     padding-left: 5rem;
+   
 }
 
-.titulo-header-tortas {
-    width: 95%;
-    text-align: justify;
-    vertical-align: middle;
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 5rem;
+.fotosSecciones {
+   margin-top: 3rem;
+
+    img {
+        width: 120%;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 1.5rem;
+        border-radius: 15px;
+    }
+
 
 }
 
-.titulo-header-placas {
-    width: 95%;
-    text-align: justify;
-    vertical-align: middle;
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 5rem;
-    padding-top: 10px;
+.textoSecciones {
 
+    h2,
+    h3,
+    h4 {
+        margin-top: 3rem;
+        font-family: $secondary-font-family;
+        color: secondary-color;
+        font-weight: bold;
+        font-size: 35px;
+        
+    }
+
+
+    p {
+        font-family: $secondary-font-family;
+        color: secondary-color;
+        font-size: 25px;
+        text-align: justify;
+    }
 }
+
+/* US*/
+
 
 .parrafoUs {
     width: 98%;
@@ -82,26 +90,19 @@ main {
     padding-right: 4%;
     font-family: $secondary-font-family;
     font-size: 20px;
+    font-weight: 600;
 }
 
 /* TABLAS */
 
-.cajamedidas {
+.cajaMedidas {
     align-items: center;
 }
 
-.titulomedidas {
+.tituloMedidas {
     text-align: center;
     padding-top: 30px;
     margin: auto;
     color: black;
     font-weight: bold;
-}
-
-.titulopagina {
-    color: $primary-color;
-    font-size: 50px;
-    font-family: $secondary-font-family;
-    font-variant: unset;
-    text-align: center;
 }

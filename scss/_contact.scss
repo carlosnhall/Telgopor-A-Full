@@ -1,24 +1,25 @@
 /* CONTACT */
 
-.form-register {
+.formularioRegistro {
     width: 500px;
     background: #736a39;
     padding: 30px;
     margin: auto;
     margin-top: 80px;
+    margin-bottom: 30px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
 
-    h4 {
+    h1 {
         font-size: 22px;
         margin-bottom: 20px;
     }
 }
 
-.controls,
-.coments {
+.controles,
+.comentarios {
     width: 100%;
     background: #24303c;
     padding: 10px;
@@ -30,7 +31,7 @@
     color: white;
 }
 
-.form-register {
+.formularioRegistro  {
     a {
         color: white;
         text-decoration: none;
